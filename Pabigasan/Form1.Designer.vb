@@ -36,9 +36,10 @@ Partial Class login_page
         '
         Me.PictureBox1.ErrorImage = Nothing
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(526, 67)
+        Me.PictureBox1.Location = New System.Drawing.Point(351, 44)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(299, 278)
+        Me.PictureBox1.Size = New System.Drawing.Size(199, 181)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -46,9 +47,10 @@ Partial Class login_page
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(398, 318)
+        Me.Label1.Location = New System.Drawing.Point(294, 239)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 27)
+        Me.Label1.Size = New System.Drawing.Size(72, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Username"
         '
@@ -56,26 +58,29 @@ Partial Class login_page
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(398, 362)
+        Me.Label2.Location = New System.Drawing.Point(294, 267)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(108, 27)
+        Me.Label2.Size = New System.Drawing.Size(72, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Password"
         '
         'username_txtb
         '
         Me.username_txtb.Font = New System.Drawing.Font("Cascadia Mono", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.username_txtb.Location = New System.Drawing.Point(526, 321)
+        Me.username_txtb.Location = New System.Drawing.Point(380, 241)
+        Me.username_txtb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.username_txtb.Name = "username_txtb"
-        Me.username_txtb.Size = New System.Drawing.Size(209, 28)
+        Me.username_txtb.Size = New System.Drawing.Size(141, 21)
         Me.username_txtb.TabIndex = 3
         '
         'pwd_txtb
         '
         Me.pwd_txtb.Font = New System.Drawing.Font("Cascadia Mono", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pwd_txtb.Location = New System.Drawing.Point(526, 362)
+        Me.pwd_txtb.Location = New System.Drawing.Point(380, 267)
+        Me.pwd_txtb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pwd_txtb.Name = "pwd_txtb"
-        Me.pwd_txtb.Size = New System.Drawing.Size(209, 28)
+        Me.pwd_txtb.Size = New System.Drawing.Size(141, 21)
         Me.pwd_txtb.TabIndex = 4
         '
         'login_btn
@@ -83,19 +88,20 @@ Partial Class login_page
         Me.login_btn.BackColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.login_btn.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.login_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.login_btn.Location = New System.Drawing.Point(621, 410)
+        Me.login_btn.Location = New System.Drawing.Point(443, 298)
+        Me.login_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.login_btn.Name = "login_btn"
-        Me.login_btn.Size = New System.Drawing.Size(114, 45)
+        Me.login_btn.Size = New System.Drawing.Size(76, 29)
         Me.login_btn.TabIndex = 5
         Me.login_btn.Text = "Login"
         Me.login_btn.UseVisualStyleBackColor = False
         '
         'login_page
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(152, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1258, 776)
+        Me.ClientSize = New System.Drawing.Size(839, 504)
         Me.Controls.Add(Me.login_btn)
         Me.Controls.Add(Me.pwd_txtb)
         Me.Controls.Add(Me.username_txtb)
@@ -103,7 +109,9 @@ Partial Class login_page
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "login_page"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pabigasan"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
