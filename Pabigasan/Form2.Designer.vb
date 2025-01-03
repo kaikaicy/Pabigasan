@@ -24,23 +24,23 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.dboard_txt = New System.Windows.Forms.Label()
-        Me.stock_txt = New System.Windows.Forms.Label()
-        Me.supplier_txt = New System.Windows.Forms.Label()
-        Me.sndo_txt = New System.Windows.Forms.Label()
-        Me.purchases_txt = New System.Windows.Forms.Label()
-        Me.profile_txt = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.logout_txt = New System.Windows.Forms.Label()
+        Me.profile_txt = New System.Windows.Forms.Label()
+        Me.purchases_txt = New System.Windows.Forms.Label()
+        Me.sndo_txt = New System.Windows.Forms.Label()
+        Me.supplier_txt = New System.Windows.Forms.Label()
+        Me.stock_txt = New System.Windows.Forms.Label()
+        Me.dboard_txt = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.current_user_txt = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel2
@@ -70,75 +70,16 @@ Partial Class Form2
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(310, 787)
         Me.TableLayoutPanel2.TabIndex = 0
         '
-        'TableLayoutPanel1
+        'logout_txt
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 1, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 1
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 793)
-        Me.TableLayoutPanel1.TabIndex = 0
-        '
-        'dboard_txt
-        '
-        Me.dboard_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.dboard_txt.AutoSize = True
-        Me.dboard_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dboard_txt.Location = New System.Drawing.Point(75, 184)
-        Me.dboard_txt.Name = "dboard_txt"
-        Me.dboard_txt.Size = New System.Drawing.Size(159, 35)
-        Me.dboard_txt.TabIndex = 1
-        Me.dboard_txt.Text = "DASHBOARD"
-        '
-        'stock_txt
-        '
-        Me.stock_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.stock_txt.AutoSize = True
-        Me.stock_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stock_txt.Location = New System.Drawing.Point(107, 273)
-        Me.stock_txt.Name = "stock_txt"
-        Me.stock_txt.Size = New System.Drawing.Size(95, 35)
-        Me.stock_txt.TabIndex = 2
-        Me.stock_txt.Text = "STOCK"
-        '
-        'supplier_txt
-        '
-        Me.supplier_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.supplier_txt.AutoSize = True
-        Me.supplier_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.supplier_txt.Location = New System.Drawing.Point(83, 362)
-        Me.supplier_txt.Name = "supplier_txt"
-        Me.supplier_txt.Size = New System.Drawing.Size(143, 35)
-        Me.supplier_txt.TabIndex = 3
-        Me.supplier_txt.Text = "SUPPLIER"
-        '
-        'sndo_txt
-        '
-        Me.sndo_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.sndo_txt.AutoSize = True
-        Me.sndo_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sndo_txt.Location = New System.Drawing.Point(91, 451)
-        Me.sndo_txt.Name = "sndo_txt"
-        Me.sndo_txt.Size = New System.Drawing.Size(127, 35)
-        Me.sndo_txt.TabIndex = 4
-        Me.sndo_txt.Text = "REPORTS"
-        '
-        'purchases_txt
-        '
-        Me.purchases_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.purchases_txt.AutoSize = True
-        Me.purchases_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.purchases_txt.Location = New System.Drawing.Point(75, 540)
-        Me.purchases_txt.Name = "purchases_txt"
-        Me.purchases_txt.Size = New System.Drawing.Size(159, 35)
-        Me.purchases_txt.TabIndex = 5
-        Me.purchases_txt.Text = "PURCHASES"
+        Me.logout_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.logout_txt.AutoSize = True
+        Me.logout_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logout_txt.Location = New System.Drawing.Point(99, 721)
+        Me.logout_txt.Name = "logout_txt"
+        Me.logout_txt.Size = New System.Drawing.Size(111, 35)
+        Me.logout_txt.TabIndex = 7
+        Me.logout_txt.Text = "LOGOUT"
         '
         'profile_txt
         '
@@ -151,26 +92,60 @@ Partial Class Form2
         Me.profile_txt.TabIndex = 6
         Me.profile_txt.Text = "PROFILE"
         '
-        'PictureBox2
+        'purchases_txt
         '
-        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(597, 206)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(386, 380)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.purchases_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.purchases_txt.AutoSize = True
+        Me.purchases_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.purchases_txt.Location = New System.Drawing.Point(75, 540)
+        Me.purchases_txt.Name = "purchases_txt"
+        Me.purchases_txt.Size = New System.Drawing.Size(159, 35)
+        Me.purchases_txt.TabIndex = 5
+        Me.purchases_txt.Text = "PURCHASES"
         '
-        'logout_txt
+        'sndo_txt
         '
-        Me.logout_txt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.logout_txt.AutoSize = True
-        Me.logout_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logout_txt.Location = New System.Drawing.Point(99, 721)
-        Me.logout_txt.Name = "logout_txt"
-        Me.logout_txt.Size = New System.Drawing.Size(111, 35)
-        Me.logout_txt.TabIndex = 7
-        Me.logout_txt.Text = "LOGOUT"
+        Me.sndo_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.sndo_txt.AutoSize = True
+        Me.sndo_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sndo_txt.Location = New System.Drawing.Point(91, 451)
+        Me.sndo_txt.Name = "sndo_txt"
+        Me.sndo_txt.Size = New System.Drawing.Size(127, 35)
+        Me.sndo_txt.TabIndex = 4
+        Me.sndo_txt.Text = "REPORTS"
+        '
+        'supplier_txt
+        '
+        Me.supplier_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supplier_txt.AutoSize = True
+        Me.supplier_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.supplier_txt.Location = New System.Drawing.Point(83, 362)
+        Me.supplier_txt.Name = "supplier_txt"
+        Me.supplier_txt.Size = New System.Drawing.Size(143, 35)
+        Me.supplier_txt.TabIndex = 3
+        Me.supplier_txt.Text = "SUPPLIER"
+        '
+        'stock_txt
+        '
+        Me.stock_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.stock_txt.AutoSize = True
+        Me.stock_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stock_txt.Location = New System.Drawing.Point(107, 273)
+        Me.stock_txt.Name = "stock_txt"
+        Me.stock_txt.Size = New System.Drawing.Size(95, 35)
+        Me.stock_txt.TabIndex = 2
+        Me.stock_txt.Text = "STOCK"
+        '
+        'dboard_txt
+        '
+        Me.dboard_txt.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dboard_txt.AutoSize = True
+        Me.dboard_txt.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dboard_txt.Location = New System.Drawing.Point(75, 184)
+        Me.dboard_txt.Name = "dboard_txt"
+        Me.dboard_txt.Size = New System.Drawing.Size(159, 35)
+        Me.dboard_txt.TabIndex = 1
+        Me.dboard_txt.Text = "DASHBOARD"
         '
         'TableLayoutPanel3
         '
@@ -208,6 +183,31 @@ Partial Class Form2
         Me.current_user_txt.TabIndex = 1
         Me.current_user_txt.Text = "user"
         '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 1, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 793)
+        Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(597, 206)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(386, 380)
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -220,11 +220,11 @@ Partial Class Form2
         Me.Text = "Form2"
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
