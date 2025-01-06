@@ -29,6 +29,7 @@ Partial Class login_page
         Me.username_txtb = New System.Windows.Forms.TextBox()
         Me.pwd_txtb = New System.Windows.Forms.TextBox()
         Me.login_btn = New System.Windows.Forms.Button()
+        Me.showpass_checkb = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,7 +38,7 @@ Partial Class login_page
         Me.PictureBox1.ErrorImage = Nothing
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(351, 44)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(199, 181)
         Me.PictureBox1.TabIndex = 0
@@ -69,7 +70,7 @@ Partial Class login_page
         '
         Me.username_txtb.Font = New System.Drawing.Font("Cascadia Mono", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.username_txtb.Location = New System.Drawing.Point(380, 241)
-        Me.username_txtb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.username_txtb.Margin = New System.Windows.Forms.Padding(2)
         Me.username_txtb.Name = "username_txtb"
         Me.username_txtb.Size = New System.Drawing.Size(141, 21)
         Me.username_txtb.TabIndex = 3
@@ -78,7 +79,7 @@ Partial Class login_page
         '
         Me.pwd_txtb.Font = New System.Drawing.Font("Cascadia Mono", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pwd_txtb.Location = New System.Drawing.Point(380, 267)
-        Me.pwd_txtb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pwd_txtb.Margin = New System.Windows.Forms.Padding(2)
         Me.pwd_txtb.Name = "pwd_txtb"
         Me.pwd_txtb.Size = New System.Drawing.Size(141, 21)
         Me.pwd_txtb.TabIndex = 4
@@ -88,13 +89,24 @@ Partial Class login_page
         Me.login_btn.BackColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.login_btn.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.login_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.login_btn.Location = New System.Drawing.Point(443, 298)
-        Me.login_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.login_btn.Location = New System.Drawing.Point(445, 315)
+        Me.login_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.login_btn.Name = "login_btn"
         Me.login_btn.Size = New System.Drawing.Size(76, 29)
         Me.login_btn.TabIndex = 5
         Me.login_btn.Text = "Login"
         Me.login_btn.UseVisualStyleBackColor = False
+        '
+        'showpass_checkb
+        '
+        Me.showpass_checkb.AutoSize = True
+        Me.showpass_checkb.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.showpass_checkb.Location = New System.Drawing.Point(380, 293)
+        Me.showpass_checkb.Name = "showpass_checkb"
+        Me.showpass_checkb.Size = New System.Drawing.Size(104, 19)
+        Me.showpass_checkb.TabIndex = 6
+        Me.showpass_checkb.Text = "Show Password"
+        Me.showpass_checkb.UseVisualStyleBackColor = True
         '
         'login_page
         '
@@ -102,6 +114,7 @@ Partial Class login_page
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(839, 504)
+        Me.Controls.Add(Me.showpass_checkb)
         Me.Controls.Add(Me.login_btn)
         Me.Controls.Add(Me.pwd_txtb)
         Me.Controls.Add(Me.username_txtb)
@@ -109,7 +122,7 @@ Partial Class login_page
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "login_page"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pabigasan"
@@ -125,4 +138,5 @@ Partial Class login_page
     Friend WithEvents username_txtb As TextBox
     Friend WithEvents pwd_txtb As TextBox
     Friend WithEvents login_btn As Button
+    Friend WithEvents showpass_checkb As CheckBox
 End Class

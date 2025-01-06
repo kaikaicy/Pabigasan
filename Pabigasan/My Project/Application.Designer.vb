@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Pabigasan.Form2
+            Me.MainForm = Global.Pabigasan.login_page
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
